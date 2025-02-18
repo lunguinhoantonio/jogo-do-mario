@@ -12,10 +12,30 @@
 </head>
 <body>
     <div class="game-board">
-        <div>
-            <button class="config">
-                <ion-icon name="menu"></ion-icon>
-            </button>
+        <button id="config">
+            <ion-icon name="switch"></ion-icon>
+        </button>
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup">
+                <span class="close-btn" id="closePopup">&times;</span>
+                <div class="content-popup">
+                    <h3 class="configuration-text">Configurações</h3>
+                    <label>
+                        Música de morte
+                        <label class="switch">
+                            <input type="checkbox" id="musicToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </label>
+                    <label>
+                        Efeitos Sonoros
+                        <label class="switch">
+                            <input type="checkbox" id="soundEffectsToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </label>
+                </div>
+            </div>
         </div>
         <div class="placar">
             <div id="points">Pontos: 0</div>
